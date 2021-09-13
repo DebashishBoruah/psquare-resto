@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root
+{
+    --yellow:#F6C90E;
+    --black:#192a56;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+*
+{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border:none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+/* #loading
+{
+    /* position: fixed;
+    width: 100%;
+    height: 100vh;
+    background:#fff 
+    url('https://loading.io/asset/508921') no-repeat center;
+    z-index:99999; */
+
+.load{
+    background:#fff ;
+    border: 1px solid #ECF0F1;
+    padding: 5px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform-origin: center center;
+    transform:translate(-50%, -50%) rotate(135deg);
+    /*change these sizes to fit into your project*/
+    width:50px;
+    height:50px; 
+  }
+  .load hr{
+    border:0;
+    margin:0;
+    width:40%;
+    height:40%;
+    position:absolute;
+    border-radius:50%;
+    animation:spin 2s ease infinite;
+  }
+  .load :first-child{background:#19A68C;animation-delay:-1.5s}
+  .load :nth-child(2){background:#F63D3A;animation-delay:-1s}
+  .load :nth-child(3){background:#FDA543;animation-delay:-0.5s}
+  .load :last-child{background:#193B48}
+  
+  @keyframes spin{
+    0%,100%{transform:translateX(200%)}
+    25%{transform:translateY(200%)}
+    50%{transform:translateX(0)}
+    75%{transform:translateY(0)}
+  }
+html
+{
+    font-size:68%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+header
+{
+    padding: 1rem 7%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+}
+header nav
+{
+    box-shadow: var(--box-shadow);
+    color: black;
+    position: fixed;
+    background-color: white;
+}
+ul a
+{
+ font-size :1.5rem;
+ color:var(--light-color);
+ border-radius: .5rem;
+}
+.active
+{
+    color:#fff;
+    background:#F6C90E;
+}
+section
+{
+    padding: 2rem 9%; 
+}
+.special h1
+  {
+color: #F0A500;
+font-weight: bolder;
+  }
+.special p{
+      font-size:1.4rem;
+}
+.special .fbtn
+{
+    border-radius:25px;
+}
+#divide
+{
+    margin-top: -140rem;
+    margin: 10px auto;
+    width:100px;
+    border-radius: 20px;
+    border:1px solid gray;
+}
+.mysection
+{
+margin-top:-70px;
+}
+.mysection h2
+{
+    font-weight: bold;
+    margin-top:-40px;
+    font-size:2.5rem;
+}
+.mycontainer
+{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -50px;
+    height:70vh;
+}
+.mycontainer img
+{
+    height:60vh;
+    border-radius: 20px;
+}
+.working-box
+{
+    padding:30px;
+}
+.working i{
+    width:150px;
+    height:150px;
+    border-radius:75px;
+    padding-top:40px;
+}
+.working p{
+    font-size:1.3rem;
+    padding:10px;
+    font-weight: bold;
+}
+.aboutresto
+{
+   padding:20px;
+}
+.aboutresto h2
+{
+    font-weight: bold;
+    font-size:30px;
+}
+.aboutresto p{
+    padding-top:10px;
+    font-size:17px;
+}
+.aboutresto li{
+    font-size: 15px;
+}
+.aboutresto button
+{
+    margin-top: 15px;
+}
+.fab {
+    font-size: 30px;
+    color: white;
+  }
+.mycard
+{
+background-color:#303841;
+border-radius: 20px;
+}
+.mycard .fas{
+    margin-left: 70px;
+    margin-top:10px;
+    margin-bottom: 20px;
+}
+.mycard h5{
+    font-weight: bold;
+}

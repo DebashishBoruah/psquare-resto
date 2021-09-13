@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root
+{
+    --green:#27ae60;
+    --black:#192a56;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+*
+{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border:none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+.load{
+    background:#fff ;
+    border: 1px solid #ECF0F1;
+    padding: 5px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform-origin: center center;
+    transform:translate(-50%, -50%) rotate(135deg);
+    /*change these sizes to fit into your project*/
+    width:50px;
+    height:50px; 
+  }
+  .load hr{
+    border:0;
+    margin:0;
+    width:40%;
+    height:40%;
+    position:absolute;
+    border-radius:50%;
+    animation:spin 2s ease infinite;
+  }
+  .load :first-child{background:#19A68C;animation-delay:-1.5s}
+  .load :nth-child(2){background:#F63D3A;animation-delay:-1s}
+  .load :nth-child(3){background:#FDA543;animation-delay:-0.5s}
+  .load :last-child{background:#193B48}
+  
+  @keyframes spin{
+    0%,100%{transform:translateX(200%)}
+    25%{transform:translateY(200%)}
+    50%{transform:translateX(0)}
+    75%{transform:translateY(0)}
+  }
+html
+{
+    font-size:68%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+header
+{
+    padding: 1rem 7%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+}
+header nav
+{
+    box-shadow: var(--box-shadow);
+    color: black;
+    position: fixed;
+    background-color: white;
+
+}
+nav .logo
+{
+    color: var(--black);
+    font-weight: bolder;
+    font-size: 2.2rem;
+}
+
+header .logo i
+{
+    color: var(--green);
+}
+ul a
+{
+ font-size :1.5rem;
+ color:var(--light-color);
+ border-radius: .5rem;
+}
+.active
+{
+    color:#fff;
+    background: var(--green);
+}
+.team
+{
+    margin:75px 0;
+}
+.team h2{
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+}
+.team p{
+    font-size: 1.3rem;
+}
+.owners
+{
+    padding-top: 20px;
+}
+.profiles
+{
+    margin-top: 25px;
+}
+.profiles .img-box
+{
+    opacity: 1;
+    display: block;
+    position: relative;
+}
+.profiles .img-box img{
+    width:400px;
+    border-radius:10px;
+}
+.profiles h2{
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;  
+}
+.profiles h3{
+    color: white;
+    font-size: 15px;
+    font-weight: bold; 
+}
+.img-box:after
+{
+    content: '';
+    opacity: 0;
+    background-color:rgba(0,0,0,0.6);
+    position:absolute;
+    border-radius: 10px;
+    width:400px;
+}
+.img-box ul
+{
+    margin: 0;
+    padding: 20px;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+.img-box ul li
+{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    margin: 3px;
+    display: inline-block;
+}
+.img-box a{
+    color:#fff;
+
+}
+.img-box:hover:after
+{
+    opacity: 1;
+}
+.img-box ul:hover
+{
+    opacity:1;
+}
