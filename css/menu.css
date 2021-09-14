@@ -2,7 +2,7 @@
 
 :root
 {
-    --green:#27ae60;
+    --yellow:#F6C90E;
     --black:#192a56;
     --light-color:#666;
     --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
@@ -41,17 +41,6 @@ header nav
     background-color: white;
 
 }
-nav .logo
-{
-    color: var(--black);
-    font-weight: bolder;
-    font-size: 2.2rem;
-}
-
-header .logo i
-{
-    color: var(--green);
-}
 ul a
 {
  font-size :1.5rem;
@@ -61,7 +50,7 @@ ul a
 .active
 {
     color:#fff;
-    background: var(--green);
+    background-color: #F6C90E;
 }
 .menu h2{
     font-weight: bold;
