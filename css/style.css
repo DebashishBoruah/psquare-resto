@@ -66,7 +66,6 @@ html
     font-size:68%;
     overflow-x: hidden;
     scroll-padding-top: 5.5rem;
-    scroll-behavior: smooth;
 }
 header
 {
@@ -89,32 +88,20 @@ ul a
  color:var(--light-color);
  border-radius: .5rem;
 }
-.active
-{
-    color:#fff;
-    background:#F6C90E;
-}
-section
-{
-    padding: 2rem 9%; 
-}
 .special h1
-  {
+{
 color: #F0A500;
 font-weight: bolder;
-  }
-.special p{
-      font-size:1.4rem;
+}
+.special p
+{
+font-size:1.4rem;
 }
 .special .fbtn
 {
-    border-radius:25px;
+border-radius:25px;
 }
-.mysection
-{
-margin-top:-70px;
-}
-.mysection h2
+.mysection h3
 {
     font-weight: bold;
     font-size:2.5rem;
@@ -175,12 +162,13 @@ border-radius: 20px;
 .mycard h5{
     font-weight: bold;
 }
-.about
-{
-    margin-top: -80px;
-}
-.about h3
+.aboutus h3
 {
     font-weight: bold;
     font-size: 2.5rem;
+}
+.dishes h3
+{
+font-size: 2.5rem;
+font-weight: bold;
 }
