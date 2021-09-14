@@ -109,14 +109,6 @@ font-weight: bolder;
 {
     border-radius:25px;
 }
-#divide
-{
-    margin-top: -140rem;
-    margin: 10px auto;
-    width:100px;
-    border-radius: 20px;
-    border:1px solid gray;
-}
 .mysection
 {
 margin-top:-70px;
@@ -124,7 +116,6 @@ margin-top:-70px;
 .mysection h2
 {
     font-weight: bold;
-    margin-top:-40px;
     font-size:2.5rem;
 }
 .mycontainer
@@ -184,11 +175,15 @@ margin-top:-70px;
 background-color:#303841;
 border-radius: 20px;
 }
-.mycard .fas{
-    margin-left: 70px;
-    margin-top:10px;
-    margin-bottom: 20px;
-}
 .mycard h5{
     font-weight: bold;
+}
+.about
+{
+    margin-top: -80px;
+}
+.about h3
+{
+    font-weight: bold;
+    font-size: 2.5rem;
 }
