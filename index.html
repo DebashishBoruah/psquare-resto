@@ -11,11 +11,19 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>P Square Resto</title>
+    <script>
+       window.onload=function()
+     {
+       document.getElementById('loader').style.display="none";
+       document.getElementById('pagecontent').style.display="block";
+     }
+    </script>
 </head>
 <body>
-<!-- <div class="load">
-    <hr/><hr/><hr/><hr/>
-</div> -->
+<div id="loader">
+  <img src="photos/loader.gif">
+</div>
+<div id="pagecontent">
     <header>
         <nav class="navbar navbar-expand-sm navbar-light fixed-top">
             <div class="container">
@@ -55,11 +63,11 @@
           </section>
     </header>
     <!--Our dishes-->
-     <section class="dishes bg-dark pb-5" id="dishes">
-       <h3 class="text-center pt-3 pb-5 text-white" data-aos="fade-down">Our <span style="color: #F0A500;;">Special</span> Dishes</h3>
+     <section class="dishes" id="dishes">
+       <h3 class="text-center pt-3 pb-5 text-dark" data-aos="fade-down">Our <span style="color: #F0A500;;">Special</span> Dishes</h3>
        <div class="container">
         <div class="row">
-          <div class="col-lg-3 col-md-6 col-12 w-25 pb-2 pt-2">
+          <div class="col-lg-3 col-md-6 col-12 pb-2 pt-2">
            <div class="card" style="border:0;">
              <img class="card-img-top img-fluid" src="photos/dish01.png" alt="Card image cap">
              <div class="card-body">
@@ -67,7 +75,7 @@
              </div>
            </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-12 w-25 pb-2 pt-2">
+          <div class="col-lg-3 col-md-6 col-12 pb-2 pt-2">
            <div class="card" style="border:0;">
              <img class="card-img-top img-fluid" src="photos/dish02.png" alt="Card image cap">
              <div class="card-body">
@@ -75,7 +83,7 @@
              </div>
            </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-12 w-25 pb-2 pt-2">
+          <div class="col-lg-3 col-md-6 col-12 pb-2 pt-2">
            <div class="card" style="border: 0;">
              <img class="card-img-top img-fluid" src="photos/dish03.png" alt="Card image cap">
              <div class="card-body">
@@ -83,7 +91,7 @@
              </div>
            </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-12 w-25 pb-2 pt-2">
+          <div class="col-lg-3 col-md-6 col-12 pb-2 pt-2">
            <div class="card" style="border:0;">
              <img class="card-img-top img-fluid" src="photos/dish01.png" alt="Card image cap">
              <div class="card-body">
@@ -185,7 +193,6 @@
 </div>
 </section>
 <!--About us-->
-
 <footer class="bg-dark text-white pt-5 pb-4">
   <div class="container text-center text-md-left">
     <div class="row text-center text-md-left">
@@ -233,29 +240,14 @@
     </div>
   </div>
 </footer>
+</div>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script>
-     AOS.init();
-    var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 30,
-      centeredSlides: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script>
+    AOS.init();
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

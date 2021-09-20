@@ -91,11 +91,6 @@ ul a
  color:var(--light-color);
  border-radius: .5rem;
 }
-.active
-{
-    color:#fff;
-    background-color: #F6C90E;
-}
 .team
 {
     margin:75px 0;
