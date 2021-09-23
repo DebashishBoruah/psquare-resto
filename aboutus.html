@@ -10,11 +10,19 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        window.onload=function()
+      {
+        document.getElementById('loader').style.display="none";
+        document.getElementById('pagecontent').style.display="block";
+      }
+     </script>
 </head>
 <body>
-    <!-- <div class="load">
-        <hr/><hr/><hr/><hr/>
-    </div> -->
+    <div id="loader">
+        <img src="photos/loader.gif">
+    </div>
+<div id="pagecontent">
     <header>
         <nav class="navbar navbar-expand-sm navbar-light fixed-top">
             <div class="container">
@@ -27,9 +35,7 @@
                 <div class="collapse navbar-collapse text-center" id="Navbar">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item pl-3"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item pl-3"><a class="nav-link" href="#dishes">Dishes</a></li>
                         <li class="nav-item pl-3"><a class="nav-link active text-white text-warning" href="#about">About</a></li>
-                        <li class="nav-item pl-3"><a class="nav-link" href="#services">Services</a></li>
                         <li class="nav-item pl-3"><a class="nav-link" href="menu.html">Menu</a></li>
                         <li class="nav-item pl-3"><a class="nav-link" href="#">Order</a></li>
                     </ul>
@@ -60,42 +66,84 @@
     <h2 class="font-weight-bold text-center">The Owners</h2>
         <div class="container-fluid bg-dark">
             <div class="row">
-                <div class="col-md-6 text-center profiles">
+                <div class="col-lg-6 col-md-6 col-12 text-center profiles">
                     <div class="img-box">
                         <img src="photos/owner1.jpg" alt="" class="img-fluid">
-                        <ul>
-                           <a href="#"><li><i class="fab fa-facebook"></i></li></a>
-                           <a href="#"><li><i class="fab fa-twitter"></i></li></a>
-                           <a href="#"><li><i class="fab fa-instagram"></i></li></a>
-                        </ul>
+                        <div class="info">
+                            <ul>
+                                <div class="text-center">
+                                    <a class="btn btn-social-icon btn-facebook text-white" href="http://www.facebook.com/profile.php?id="><i class="fab fa-facebook fa-2x"></i></a>
+                                    <a class="btn btn-social-icon btn-instagram text-white" href=""><i class="fab fa-instagram fa-2x"></i></a>
+                                    <a class="btn btn-social-icon btn-mail text-white" href="mailto:"><i class="fas fa-envelope fa-2x"></i></a>
+                                </div>
+                                <br>
+                            </ul>
+                            
+                            <h2>Probir Gogoi</h2>
+                        </div>
                     </div>
-                    <h2>Probir Gogoi</h2>
-                    <h3>Founder</h3>
                 </div>
-                <div class="col-md-6 text-center profiles">
+                <div class="col-lg-6 col-md-6 col-12 text-center profiles">
                  <div class="img-box">
                      <img src="photos/owner2.jpg" alt="" class="img-fluid">
-                     <ul>
-                        <a href="#"><li><i class="fab fa-facebook"></i></li></a>
-                        <a href="#"><li><i class="fab fa-twitter"></i></li></a>
-                        <a href="#"><li><i class="fab fa-instagram"></i></li></a>
-                     </ul>
+                     <div class="info">
+                        <ul>
+                            <div class="text-center">
+                                <a class="btn btn-social-icon btn-facebook text-white" href="http://www.facebook.com/profile.php?id="><i class="fab fa-facebook fa-2x"></i></a>
+                                <a class="btn btn-social-icon btn-instagram text-white" href=""><i class="fab fa-instagram fa-2x"></i></a>
+                                <a class="btn btn-social-icon btn-mail text-white" href="mailto:"><i class="fas fa-envelope fa-2x"></i></a>
+                            </div>
+                            <br>
+                        </ul>
+                        <h2>Himanshu Gogoi</h2>
+                    </div>
                  </div>
-                 <h2>Himanshu Gogoi</h2>
-                 <h3>Founder</h3>
              </div>
             </div>
         </div>
     </section>
-<section class="dev-map">
-    <div class="container">
-        <div class="row">
-
+<section>
+    <div class="container"> 
+        <div class="row row-content">
+           <div class="col-12">
+              <h3>Location Information</h3>
+           </div>
+            <div class="col-lg-6 col-md-6 col-12">
+                   <h5 style="font-size:20px;font-weight: bold;">Our Address</h5>
+                    <address style="font-size:18px">
+		              786610, Near Digboi Park<br>
+		              BFC road,Digboi,Assam<br>
+		              INDIA<br>
+		              <i class="fa fa-phone"></i>: +91 9090909090<br>
+		              <i class="fa fa-fax"></i>: +91 9898989898<br>
+		              <i class="fa fa-envelope"></i>:
+                        <a href="mailto:mailto:abcGym@gmail.com">abcGym@gmail.com</a>
+		           </address>
+                   <div class="btn-group" role="group" style="font-size: 85px;">
+                    <a role="button" class="btn btn-primary" style="font-size:18px;" href="tel:+91 9999900000"><i class="fa fa-phone"></i> Call</a>
+                    <a role="button" class="btn btn-success" style="font-size:18px;"><i class="fab fa-whatsapp"></i> Whatsapp</a>
+                    <a role="button" class="btn btn-warning" style="font-size:18px;" href="mailto:abcGym@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+                </div>
             </div>
+            <div class="col-lg-6 col-md-6 col-12 pb-4 ">
+                    <div class="card card-cascade narrower">
+                      <div class="card-body card-body-cascade text-center">
+                        <div id="map-container-google-9" class="z-depth-1-half map-container-5" style="height:300px">
+                          <iframe src="https://maps.google.com/maps?q=Digboi&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                            style="border:0" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                    </div>
+             </div>
         </div>
+</div>
 </section>
+<div class="card-footer bg-dark text-center text-white">
+    Designed By:
+      <a href="https://www.linkedin.com/in/debashish-boruah-16658b194/">Debashish Boruah</a>
+  </div>
+</div>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

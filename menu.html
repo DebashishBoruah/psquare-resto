@@ -10,9 +10,19 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Menu</title>
+    <script>
+      window.onload=function()
+    {
+      document.getElementById('loader').style.display="none";
+      document.getElementById('pagecontent').style.display="block";
+    }
+   </script>
 </head>
 <body>
-</div> -->
+  <div id="loader">
+    <img src="photos/loader.gif">
+  </div>
+  <div id="pagecontent">
 <header>
     <nav class="navbar navbar-expand-sm navbar-light fixed-top">
         <div class="container">
@@ -26,8 +36,7 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item pl-3"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item pl-3"><a class="nav-link" href="aboutus.html">About</a></li>
-                    <li class="nav-item pl-3"><a class="nav-link" href="#">Dishes</a></li>
-                    <li class="nav-item pl-3"><a class="nav-link active text-white" href="#">Menu</a></li>
+                    <li class="nav-item pl-3"><a class="nav-link  text-warning" href="#">Menu</a></li>
                     <li class="nav-item pl-3"><a class="nav-link" href="#">Order</a></li>
                 </ul>
             </div>
@@ -123,6 +132,7 @@
             </div>
         </div>
       </section>
+    </div>
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
