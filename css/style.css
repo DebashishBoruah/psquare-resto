@@ -23,6 +23,7 @@ html
 {
     font-size:68%;
     scroll-padding-top: 5.5rem;
+    overflow-x:hidden;
 }
 #pagecontent
 {
