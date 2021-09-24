@@ -26,6 +26,7 @@ body
 {
     padding: 50px 0px 0px 0px;
     z-index: 0;
+    overflow-x: hidden;
 }
 #pagecontent
 {
@@ -46,25 +47,6 @@ body
 {
     width: 300px;
 }
-.row-header{
-    margin:0px auto;
-    padding:0px;
-}
-
-.row-content {
-    margin:0px auto;
-    padding: 50px 0px 50px 0px;
-    border-bottom: 1px ridge;
-    min-height:400px;
-}
-header
-{
-    padding: 1rem 7%;
-    align-items: center;
-    /* display: flex; */
-    /* justify-content: space-between; */
-    /* z-index: 1000; */
-}
 nav
 {
     box-shadow: var(--box-shadow);
@@ -76,6 +58,26 @@ ul a
 {
  font-size :1.5rem;
  color:var(--light-color);
+}
+header
+{
+    padding: 1rem 7%;
+    align-items: center;
+    display: flex; 
+    justify-content: space-between; 
+     z-index: 1000;
+}
+
+.row-header{
+    margin:0px auto;
+    padding:0px;
+}
+
+.row-content {
+    margin:0px auto;
+    padding: 50px 0px 50px 0px;
+    border-bottom: 1px ridge;
+    min-height:400px;
 }
 .special h1
 {
