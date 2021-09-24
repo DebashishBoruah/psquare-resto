@@ -12,18 +12,20 @@
     font-family: 'Nunito', sans-serif;
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
-    /* outline: none;
-    border:none; */
     text-transform: capitalize;
     transition: all .2s linear;
-    scroll-behavior: smooth;
 }
 html
 {
     font-size:68%;
     scroll-padding-top: 5.5rem;
-    overflow-x:hidden;
+    scroll-behavior: smooth;
+   
+}
+body
+{
+    padding: 50px 0px 0px 0px;
+    z-index: 0;
 }
 #pagecontent
 {
@@ -44,6 +46,17 @@ html
 {
     width: 300px;
 }
+.row-header{
+    margin:0px auto;
+    padding:0px;
+}
+
+.row-content {
+    margin:0px auto;
+    padding: 50px 0px 50px 0px;
+    border-bottom: 1px ridge;
+    min-height:400px;
+}
 header
 {
     padding: 1rem 7%;
@@ -52,7 +65,7 @@ header
     /* justify-content: space-between; */
     /* z-index: 1000; */
 }
-header nav
+nav
 {
     box-shadow: var(--box-shadow);
     color: black;
